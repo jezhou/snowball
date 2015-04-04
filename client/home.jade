@@ -1,3 +1,6 @@
 template(name="home")
   each snowballs
-    h2 #{topic} #{geolocation.lat} #{geolocation.lng}
+    h2 #{topic} 
+    button.btn.btn-success Upvote
+    button.btn.btn-danger Downvote
+    |p Votes #{votes}
