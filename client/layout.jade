@@ -1,0 +1,10 @@
+template(name="layout")
+  .container
+    .col-sm-5.col-xs-12(style="text-align:center")
+      h1 snow#[strong ball]
+      
+      button.btn.btn-default.btn-block.createSB(type="submit").
+        Throw a snowball
+        
+    .col-sm-7.col-xs-12.content
+      +yield
