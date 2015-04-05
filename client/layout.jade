@@ -1,10 +1,18 @@
 template(name="layout")
-  .container
-    .col-sm-5.col-xs-12(style="text-align:center")
-      h1 snow#[strong ball]
+  .container-fluid
+    .col-sm-4.col-sm-offset-4.col-xs-12(style="text-align:center")
+      h1 snow#[strong ball] 
+      div(id="ball")
       
-      button.btn.btn-default.btn-block.createSB(type="submit").
-        Throw a snowball
+      +loginButtons
+      
+      br
+      
+      if currentUser
+        button.btn.btn-default.btn-block.createSB(type="submit").
+          Start a Snowball
+      else
+        p Sign up or Log in 
         
-    .col-sm-7.col-xs-12.content
+    .col-xs-12.content
       +yield

@@ -14,3 +14,7 @@ mdg:geolocation
 remcoder:chronos
 insecure
 autopublish
+momentjs:moment
+accounts-password
+accounts-ui
+isotope:isotope

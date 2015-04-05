@@ -5,3 +5,20 @@ h1, p{
 h1{
   font-weight: 300;
 }
+
+.createSB{
+  margin-top: 30px;
+}
+
+#ball{
+  background: url(snowball.png);
+  background-repeat: no-repeat;
+  width: 128px;
+  height: 128px;
+  animation: ball-bounce 0.7s steps(10) infinite;
+}
+
+@keyframes ball-bounce {
+  from { background-position: 0px; }
+  to { background-position: -1280px; }
+}

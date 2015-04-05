@@ -1,6 +1,21 @@
 template(name="home")
-  each snowballs
-    h2 #{topic} 
-    button.btn.btn-success Upvote
-    button.btn.btn-danger Downvote
-    |p Votes #{votes}
+  if snowballs.count
+    each snowballs
+      .col-sm-3.col-xs-12.item
+        if thawing velocity
+          .alert.alert-warning
+            p #[strong This Snowball is starting to thaw!] 
+            p Try to get it rolling!
+            
+        if melting velocity
+          .alert.alert-danger
+            p #[strong This Snowball is melting!] 
+            p If it doesn't roll soon, it will disappear forever.
+            
+        h2 #{topic}
+        h4 Velocity: #{velocity}, Score: {{countTime createTime}}
+        if currentUser
+          button.btn.btn-xs.btn-info.btn-roll(value="{{_id}}").
+            Keep It Rolling!
+  else
+    h3 There aren't any Snowballs. Let's get rolling!
