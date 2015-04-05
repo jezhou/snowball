@@ -16,4 +16,4 @@ Additionally, keeping track of a Snowball's score will give you an idea of how p
 Everything on Snowball is ephemeral. A post that's available one day might not be available the next. It's fun, it's 
 adventurous, and it's the present. It's Snowball.
 
-Check out a live version at [snowball.meteor.com](snowball.meteor.com)
+Check out a live version at [snowball.meteor.com](https://snowball.meteor.com)
