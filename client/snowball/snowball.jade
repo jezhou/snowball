@@ -1,9 +1,9 @@
 template(name="snowball")
 
-  .container.col-xs-12
+  .container.col-sm-8.col-sm-offset-2
         
     h2 #{topic}
-    h4 Velocity: #{velocity},
+    h4 Velocity: #{velocity}, Score: #{score}
     if currentUser
       button.btn.btn-xs.btn-info.btn-roll(value="{{_id}}").
         Keep It Rolling!

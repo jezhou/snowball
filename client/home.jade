@@ -13,7 +13,7 @@ template(name="home")
             p If it doesn't roll soon, it will disappear forever.
             
         h2 #{topic}
-        h4 Velocity: #{velocity}, Score: {{countTime createTime}}
+        h4 Velocity: #{velocity}, Score: #{score}
         if currentUser
           button.btn.btn-xs.btn-info.btn-roll(value="{{_id}}").
             Keep It Rolling!

@@ -10,15 +10,10 @@ h1{
   margin-top: 30px;
 }
 
-#ball{
-  background: url(snowball.png);
-  background-repeat: no-repeat;
+#snowball-gif {
   width: 128px;
   height: 128px;
-  animation: ball-bounce 0.7s steps(10) infinite;
-}
-
-@keyframes ball-bounce {
-  from { background-position: 0px; }
-  to { background-position: -1280px; }
+  position: relative;
+  top: -20px;
+  z-index: -100;
 }
